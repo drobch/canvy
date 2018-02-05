@@ -49,7 +49,8 @@
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.strokeStyle = '#000';
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
@@ -92,19 +93,6 @@
         } );
         canvas.addEventListener('mouseup', () => isDrawing = false );
         canvas.addEventListener('mouseout', () => isDrawing = false );
-
-
-
-        canvas.addEventListener('touchmove', draw);
-        canvas.addEventListener('touchstart', (e) => {
-            isDrawing = true;
-            [lastX, lastY] = [e.offsetX, e.offsetY];
-            event.preventDefault();
-        } );
-        canvas.addEventListener('touchup', () => {
-            isDrawing = false;
-            event.preventDefault();
-        } );
 
 
 
