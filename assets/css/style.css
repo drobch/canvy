@@ -15,7 +15,7 @@ canvas {
   user-select: none;
 }
 
-.button {
+.header__button {
   font-size: 2em;
   font-family: "Courier New";
 }
