@@ -1,4 +1,3 @@
-Canvy
-========================
-
-[Draw and save!](https://drobch.github.io/canvy/)
+#Canvy
+#
+![Draw and save!](screenshot.png)
